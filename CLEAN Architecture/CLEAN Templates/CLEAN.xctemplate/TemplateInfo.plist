@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>sceneName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Scene:</string>
+			<key>Description</key>
+			<string>Name of the scene</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>CLEANScene</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>useCaseName</string>
+			<key>Optional</key>
+			<false/>
+			<key>Name</key>
+			<string>Use case:</string>
+			<key>Description</key>
+			<string>Use case if needed</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>CLEANUseCase</string>
+		</dict>
+	</array>
+</dict>
+</plist>
