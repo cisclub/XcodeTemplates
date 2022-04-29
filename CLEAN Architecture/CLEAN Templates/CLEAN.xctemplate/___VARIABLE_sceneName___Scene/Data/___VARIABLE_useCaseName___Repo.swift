@@ -8,9 +8,13 @@ struct ___VARIABLE_useCaseName___Repo: Repository {
     typealias Output = <#output type#>
     
     
-    let network : HTTPClient.type
+    let network : NetworkManager.Type
     
     
     func execute(input: Input, finishHandler: (Output) -> ()) {
     }
+}
+
+
+struct ___VARIABLE_useCaseName___RepoInput {
 }
