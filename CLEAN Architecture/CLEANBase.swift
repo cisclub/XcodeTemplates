@@ -29,8 +29,8 @@ import UIKit
 /// ```
 /// - ActionsType: Actions are the channel via which coordinator can communicate with caller objet (mainly another coordinator). It can be a closure
 protocol Coordinator {
-    associatedtype InputType
-    associatedtype ActionsType
+    associatedtype InputType // Dependencies type
+    associatedtype ActionsType // Feedback closure type
 
     
     var input: InputType { get }
@@ -46,8 +46,8 @@ protocol Coordinator {
 // MARK: Use Case
 protocol UseCase {
     associatedtype InputType
-    associatedtype ClosureType
-    associatedtype ReturnType
+    associatedtype ClosureType  // AsyncReturnType
+    associatedtype ReturnType   // ReturnType
     associatedtype RepoType
     
     
