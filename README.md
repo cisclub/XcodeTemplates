@@ -9,3 +9,6 @@
 4. In Xcode try to add new file and look for "Clean Templates"
 
 Known Issue: Target membership is missing when template is added.
+  
+  TODO:
+  - User don't have to enter use case name while creatig the template.
