@@ -40,6 +40,13 @@ protocol Coordinator {
     init(input: InputType, actions: ActionsType)
     
     func start()
+    func dismiss()
+}
+
+extension Coordinator {
+    func dismiss() {
+        fatalError("\(Self.self).dismiss is not implemented") // Means you are trying to call dismiss in a class/struct that doesnt implement it
+    }
 }
 
 
@@ -76,41 +83,9 @@ protocol ViewModel {
     associatedtype UseCasesType
     associatedtype ActionsType
     
+    var viewController: UIViewController? { get }
     var useCases: UseCasesType { get }
     var actions: ActionsType { get }
-}
-
-
-// MARK: View Controller
-protocol BasicViewController {
-    associatedtype ViewModelType: ViewModel
-    
-    
-    var viewModel: ViewModelType { get }
-}
-
-
-class StandardViewController<VM: ViewModel>: UIViewController, BasicViewController {
-    typealias ViewModelType = VM
-    
-    
-    private var _viewModel: ViewModelType?
-    var viewModel: ViewModelType {
-        get {
-            return _viewModel!
-        }
-    }
-    
-    
-    static func instanceFromStoryboard<T>(withViewModel viewModel: VM) -> T where T : StandardViewController<VM>
-    {
-        let name = "\(Self.self)".replacingOccurrences(of: "ViewController", with: "Scene")
-        let storyboard = UIStoryboard(name: name, bundle: .main)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "\(Self.self)") as! T
-        viewController._viewModel = viewModel
-        
-        return viewController
-    }
 }
 
 

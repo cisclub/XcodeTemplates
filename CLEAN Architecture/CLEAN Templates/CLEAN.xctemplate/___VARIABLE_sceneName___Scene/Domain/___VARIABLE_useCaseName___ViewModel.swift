@@ -1,6 +1,7 @@
 //
 //  ___FILEHEADER___
 //
+import UIKit
 
 
 struct ___VARIABLE_useCaseName___ViewModel: ViewModel {
@@ -8,6 +9,7 @@ struct ___VARIABLE_useCaseName___ViewModel: ViewModel {
     typealias ActionsType = ___VARIABLE_useCaseName___ViewModelActions
     
     
+    let viewController: UIViewController?
     let useCases: UseCasesType
     let actions: ActionsType
 }
