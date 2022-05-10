@@ -125,7 +125,7 @@ protocol MVVM {
     associatedtype ViewModelType: ViewModel
     
     
-    var viewModel: ViewModelType { get set }
+    var viewModel: ViewModelType? { get set }
 }
 
 

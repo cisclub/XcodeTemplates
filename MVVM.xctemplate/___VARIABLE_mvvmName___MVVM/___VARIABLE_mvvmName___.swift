@@ -11,7 +11,7 @@ class ___VARIABLE_mvvmName___: UIView, MVVM {
     
     
     private var _viewModel: ViewModelType?
-    var viewModel: ViewModelType {
+    var viewModel: ViewModelType? {
         get {
             return _viewModel!
         }
