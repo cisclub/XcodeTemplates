@@ -45,7 +45,7 @@ class ___VARIABLE_mvvmName___Model: ViewModel {
     init(useCases: UseCasesType, actions: ActionsType) {
         self.useCases = useCases
         self.actions = actions
-        self.viewController = nil
+        self.view = nil
     }
 }
 
