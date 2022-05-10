@@ -7,9 +7,10 @@ import UIKit
 struct ___VARIABLE_useCaseName___ViewModel: ViewModel {
     typealias UseCasesType = ___VARIABLE_useCaseName___UseCases
     typealias ActionsType = ___VARIABLE_useCaseName___ViewModelActions
+    typealias ViewType = ___VARIABLE_useCaseName___ViewController
     
     
-    let viewController: UIViewController? = nil
+    let view: ViewType?
     let useCases: UseCasesType
     let actions: ActionsType
     
@@ -17,6 +18,7 @@ struct ___VARIABLE_useCaseName___ViewModel: ViewModel {
     init(useCases: UseCasesType, actions: ActionsType) {
         self.useCases = useCases
         self.actions = actions
+        self.view = nil
     }
 }
 
