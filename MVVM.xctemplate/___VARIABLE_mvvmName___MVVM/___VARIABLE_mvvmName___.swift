@@ -34,9 +34,10 @@ class ___VARIABLE_mvvmName___: UIView, MVVM {
 class ___VARIABLE_mvvmName___Model: ViewModel {
     typealias UseCasesType = ___VARIABLE_mvvmName___UseCases
     typealias ActionsType = ___VARIABLE_mvvmName___Actions
+    typealias ViewType = ___VARIABLE_mvvmName___
     
     
-    let viewController: UIViewController?
+    let view: ViewType?
     let useCases: UseCasesType
     let actions: ActionsType
     
