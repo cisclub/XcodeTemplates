@@ -6,27 +6,34 @@
 import Foundation
 
 
-class ___VARIABLE_mvvmName___: MVVM {
-    typealias ViewModelType = TouchViewModel
+class ___VARIABLE_mvvmName___: UIView, MVVM {
+    typealias ViewModelType = ___VARIABLE_mvvmName___Model
     
     
-    let viewModel: ViewModelType
+    private var _viewModel: ViewModelType?
+    var viewModel: ViewModelType {
+        return _viewModel!
+    }
     
     
-    init(viewModel: ViewModelType) {
-        self.viewModel = viewModel
+    class func instance(withModel viewModel: ViewModelType) -> ___VARIABLE_mvvmName___ {
+        let nibName = "___VARIABLE_mvvmName___"
+        let view = Bundle.main.loadNibNamed(nibName, owner: nil)!.first as! ___VARIABLE_mvvmName___
+        view._viewModel = viewModel
+        
+        return view
     }
 }
 
 
-class ___VARIABLE_mvvmName___ViewModel: ViewModel {
-    typealias UseCasesType = TouchUseCases
-    typealias ActionsType = TouchActions
+class ___VARIABLE_mvvmName___Model: ViewModel {
+    typealias UseCasesType = ___VARIABLE_mvvmName___UseCases
+    typealias ActionsType = ___VARIABLE_mvvmName___Actions
     
     
     let viewController: UIViewController?
-    let useCases: TouchUseCases
-    let actions: TouchActions
+    let useCases: UseCasesType
+    let actions: ActionsType
     
     
     init(useCases: UseCasesType, actions: ActionsType) {
