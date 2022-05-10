@@ -6,7 +6,7 @@
 import Foundation
 
 
-class ___VARIABLE_sceneName___: MVVM {
+class ___VARIABLE_mvvmName___: MVVM {
     typealias ViewModelType = TouchViewModel
     
     
@@ -19,7 +19,7 @@ class ___VARIABLE_sceneName___: MVVM {
 }
 
 
-class ___VARIABLE_sceneName___ViewModel: ViewModel {
+class ___VARIABLE_mvvmName___ViewModel: ViewModel {
     typealias UseCasesType = TouchUseCases
     typealias ActionsType = TouchActions
     
@@ -37,10 +37,10 @@ class ___VARIABLE_sceneName___ViewModel: ViewModel {
 }
 
 
-struct ___VARIABLE_sceneName___UseCases {
+struct ___VARIABLE_mvvmName___UseCases {
 }
 
 
-struct ___VARIABLE_sceneName___Actions {
+struct ___VARIABLE_mvvmName___Actions {
 }
 
