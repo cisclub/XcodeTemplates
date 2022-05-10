@@ -10,21 +10,13 @@ class ___VARIABLE_mvvmName___: UIView, MVVM {
     typealias ViewModelType = ___VARIABLE_mvvmName___Model
     
     
-    private var _viewModel: ViewModelType?
-    var viewModel: ViewModelType? {
-        get {
-            return _viewModel!
-        }
-        set {
-            _viewModel = newValue
-        }
-    }
+    var viewModel: ViewModelType?
     
     
     class func instance(withModel viewModel: ViewModelType) -> ___VARIABLE_mvvmName___ {
         let nibName = "___VARIABLE_mvvmName___"
         let view = Bundle.main.loadNibNamed(nibName, owner: nil)!.first as! ___VARIABLE_mvvmName___
-        view._viewModel = viewModel
+        view.viewModel = viewModel
         
         return view
     }
