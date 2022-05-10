@@ -105,10 +105,13 @@ protocol ViewModel {
     /// Use cases in this logic unit
     associatedtype UseCasesType
     
+    /// Can be a UIView or UIViewController or a subclass from either
+    associatedtype ViewType
+    
     /// Actions are closures that will be called to handle events happenning in View Model. For example when it should move to another scene
     associatedtype ActionsType
     
-    var viewController: UIViewController? { get }
+    var view: ViewType? { get }
     var useCases: UseCasesType { get }
     var actions: ActionsType { get }
 }
@@ -122,7 +125,7 @@ protocol MVVM {
     associatedtype ViewModelType: ViewModel
     
     
-    var viewModel: ViewModelType { get }
+    var viewModel: ViewModelType { get set }
 }
 
 

@@ -12,7 +12,12 @@ class ___VARIABLE_mvvmName___: UIView, MVVM {
     
     private var _viewModel: ViewModelType?
     var viewModel: ViewModelType {
-        return _viewModel!
+        get {
+            return _viewModel!
+        }
+        set {
+            _viewModel = newValue
+        }
     }
     
     
