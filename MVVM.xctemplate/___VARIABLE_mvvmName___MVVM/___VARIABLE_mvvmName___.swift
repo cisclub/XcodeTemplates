@@ -26,10 +26,8 @@ class ___VARIABLE_mvvmName___: UIView, MVVM {
 class ___VARIABLE_mvvmName___Model: ViewModel {
     typealias UseCasesType = ___VARIABLE_mvvmName___UseCases
     typealias ActionsType = ___VARIABLE_mvvmName___Actions
-    typealias ViewType = ___VARIABLE_mvvmName___
     
     
-    weak let view: ViewType?
     let useCases: UseCasesType
     let actions: ActionsType
     
@@ -37,7 +35,6 @@ class ___VARIABLE_mvvmName___Model: ViewModel {
     init(useCases: UseCasesType, actions: ActionsType) {
         self.useCases = useCases
         self.actions = actions
-        self.view = nil
     }
 }
 

@@ -7,10 +7,8 @@ import UIKit
 class ___VARIABLE_useCaseName___ViewModel: ViewModel {
     typealias UseCasesType = ___VARIABLE_useCaseName___UseCases
     typealias ActionsType = ___VARIABLE_useCaseName___ViewModelActions
-    typealias ViewType = ___VARIABLE_useCaseName___ViewController
     
     
-    weak var view: ViewType?
     let useCases: UseCasesType
     let actions: ActionsType
     
@@ -18,7 +16,6 @@ class ___VARIABLE_useCaseName___ViewModel: ViewModel {
     init(useCases: UseCasesType, actions: ActionsType) {
         self.useCases = useCases
         self.actions = actions
-        self.view = nil
     }
 }
 
