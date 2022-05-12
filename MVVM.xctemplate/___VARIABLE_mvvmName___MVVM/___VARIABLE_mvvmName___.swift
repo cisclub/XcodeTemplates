@@ -29,7 +29,7 @@ class ___VARIABLE_mvvmName___Model: ViewModel {
     typealias ViewType = ___VARIABLE_mvvmName___
     
     
-    let view: ViewType?
+    weak let view: ViewType?
     let useCases: UseCasesType
     let actions: ActionsType
     

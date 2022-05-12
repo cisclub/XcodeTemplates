@@ -3,7 +3,7 @@
 //
 
 
-struct ___VARIABLE_sceneName___Coordinator: Coordinator {
+class ___VARIABLE_sceneName___Coordinator: Coordinator {
     typealias InputType = ___VARIABLE_sceneName___CoordinatorInput
     typealias ActionsType = ___VARIABLE_sceneName___CoordinatorActions
 
@@ -12,7 +12,7 @@ struct ___VARIABLE_sceneName___Coordinator: Coordinator {
     let actions: ActionsType
 
     
-    init(input: InputType, actions: ActionsType) {
+    required init(input: InputType, actions: ActionsType) {
         self.input = input
         self.actions = actions
     }
