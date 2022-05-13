@@ -104,10 +104,11 @@ protocol Repository {
 protocol ViewModel {
     /// Use cases in this logic unit
     associatedtype UseCasesType
+    
     /// Actions are closures that will be called to handle events happenning in View Model. For example when it should move to another scene
     associatedtype ActionsType
     
-
+    
     var useCases: UseCasesType { get }
     var actions: ActionsType { get }
 }
@@ -143,5 +144,9 @@ class Observable<T> {
     func bind(_ closure: @escaping (T) -> Void) {
         closure(value)
         listener = closure
+    }
+    
+    func removeBinding() {
+        listener = nil
     }
 }
