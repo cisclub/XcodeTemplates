@@ -50,7 +50,7 @@ protocol Coordinator {
 
 extension Coordinator {
     func dismiss() {
-        fatalError("\(Self.self).dismiss is not implemented") // Means you are trying to call dismiss in a class/struct that doesnt implement it
+        fatalError("\(Self.self).dismiss is not implemented") // Means you are trying to call dismiss in an object that doesnt implement it
     }
 }
 
@@ -85,10 +85,10 @@ protocol Repository {
     /// Dependencies of the repo
     associatedtype InputType
     
-    /// In case use case will return in an async fasion, this shoulld define the type of the closure.
+    /// In case  request will return in an async fasion, this shoulld define the type of the closure.
     associatedtype ClosureType
     
-    /// Return of the use case
+    /// Return of the request
     associatedtype ReturnType
     
     
