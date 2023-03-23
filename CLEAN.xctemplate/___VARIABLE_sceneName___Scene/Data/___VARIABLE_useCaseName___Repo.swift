@@ -3,22 +3,20 @@
 //
 
 
-extension ___VARIABLE_sceneName___Coordinator.ViewModel.UseCases.___VARIABLE_useCaseName___ {
+extension ___VARIABLE_sceneName___Coordinator.VModel.UseCases.___VARIABLE_useCaseName___ {
     struct Repo: Repository {
-        typealias Input = Input
-        typealias Output = <#output type#>
+        typealias InputType = Input
+        typealias OutputType = Void?
         
         
         let network : NetworkManager.Type
         
         
-        func execute(input: Input, finishHandler: (Output) -> ()) {
+        func execute(input: InputType, finishHandler: (OutputType) -> ()) {
         }
-    }
-}
-
-
-extension ___VARIABLE_sceneName___Coordinator.ViewModel.UseCases.___VARIABLE_useCaseName___.Repo {
-    struct Input {
+        
+        
+        struct Input {
+        }
     }
 }

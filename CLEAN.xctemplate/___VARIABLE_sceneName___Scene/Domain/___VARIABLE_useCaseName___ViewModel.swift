@@ -5,7 +5,7 @@ import UIKit
 
 
 extension ___VARIABLE_sceneName___Coordinator {
-    class `ViewModel`: ViewModel {
+    class VModel: ViewModel {
         typealias UseCasesType = UseCases
         typealias ActionsType = Actions
         
@@ -22,11 +22,11 @@ extension ___VARIABLE_sceneName___Coordinator {
 }
 
 
-extension ___VARIABLE_sceneName___Coordinator.ViewModel {
+extension ___VARIABLE_sceneName___Coordinator.VModel {
     struct Actions {
     }
     
     struct UseCases {
-        let <#useCase#>: ___VARIABLE_useCaseName___UseCase
+        let useCase: UseCases.___VARIABLE_useCaseName___
     }
 }

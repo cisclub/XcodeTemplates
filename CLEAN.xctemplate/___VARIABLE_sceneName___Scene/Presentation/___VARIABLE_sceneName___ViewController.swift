@@ -6,5 +6,5 @@
 import UIKit
 
 
-class ___VARIABLE_sceneName___ViewController: StandardViewController<___VARIABLE_sceneName___ViewModel> {
+class ___VARIABLE_sceneName___ViewController: StandardViewController<___VARIABLE_sceneName___Coordinator.VModel> {
 }

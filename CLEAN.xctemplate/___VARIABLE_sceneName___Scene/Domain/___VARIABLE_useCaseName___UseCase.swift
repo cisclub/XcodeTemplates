@@ -3,25 +3,23 @@
 //
 
 
-extension ___VARIABLE_sceneName___Coordinator.ViewModel.UseCases {
+extension ___VARIABLE_sceneName___Coordinator.VModel.UseCases {
     struct ___VARIABLE_useCaseName___: UseCase {
         typealias InputType = Input
-        typealias ClosureType = <#closur type#>
-        typealias ReturnType = <#return type#>
+        typealias ClosureType = Void?
+        typealias ReturnType = Void?
         typealias RepoType = Repo
         
         
         let repo: RepoType
         
         
-        func execute(input: InputType, finishHandler:ClosureType) -> ReturnType {
-            
+        func execute(input: InputType, finishHandler: ClosureType) -> ReturnType {
+            return nil
         }
-    }
-}
-
-
-extension ___VARIABLE_useCaseName___ {
-    struct Input {
+        
+        
+        struct Input {
+        }
     }
 }
