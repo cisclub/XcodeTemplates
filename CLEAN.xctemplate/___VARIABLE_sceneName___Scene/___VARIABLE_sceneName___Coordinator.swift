@@ -4,8 +4,8 @@
 
 
 class ___VARIABLE_sceneName___Coordinator: Coordinator {
-    typealias InputType = ___VARIABLE_sceneName___CoordinatorInput
-    typealias ActionsType = ___VARIABLE_sceneName___CoordinatorActions
+    typealias InputType = Input
+    typealias ActionsType = Actions
 
     
     let input: InputType
@@ -22,9 +22,11 @@ class ___VARIABLE_sceneName___Coordinator: Coordinator {
 }
 
 
-struct ___VARIABLE_sceneName___CoordinatorInput {
-}
-
-
-struct ___VARIABLE_sceneName___CoordinatorActions {
+extension ___VARIABLE_sceneName___Coordinator {
+    struct Input {
+    }
+    
+    
+    struct Actions {
+    }
 }

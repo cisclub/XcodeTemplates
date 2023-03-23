@@ -4,21 +4,29 @@
 import UIKit
 
 
-class ___VARIABLE_useCaseName___ViewModel: ViewModel {
-    typealias UseCasesType = ___VARIABLE_useCaseName___UseCases
-    typealias ActionsType = ___VARIABLE_useCaseName___ViewModelActions
-    
-    
-    let useCases: UseCasesType
-    let actions: ActionsType
-    
-    
-    init(useCases: UseCasesType, actions: ActionsType) {
-        self.useCases = useCases
-        self.actions = actions
+extension ___VARIABLE_sceneName___Coordinator {
+    class `ViewModel`: ViewModel {
+        typealias UseCasesType = UseCases
+        typealias ActionsType = Actions
+        
+        
+        let useCases: UseCasesType
+        let actions: ActionsType
+        
+        
+        init(useCases: UseCasesType, actions: ActionsType) {
+            self.useCases = useCases
+            self.actions = actions
+        }
     }
 }
 
 
-struct ___VARIABLE_useCaseName___ViewModelActions {
+extension ___VARIABLE_sceneName___Coordinator.ViewModel {
+    struct Actions {
+    }
+    
+    struct UseCases {
+        let <#useCase#>: ___VARIABLE_useCaseName___UseCase
+    }
 }
